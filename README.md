@@ -21,6 +21,11 @@ https://pypi.org/project/englisttohindi/  for api references.
 | :-------- | :------- | :------------------------- |
 | `id` | `string` | **Required**.   |
 
+## Prerequisite
+#### python 
+  1. Download and install **python** from https://www.python.org/
+  2. Install vscode
+  3. Install plugins for webdevlopment
 ## Demo
 
 #### Step 1
