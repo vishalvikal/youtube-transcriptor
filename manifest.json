@@ -1,0 +1,37 @@
+{
+    "name": "Transcript extension",
+    "version": "0.1.0",
+    "description": "Trasncripting the videos",
+    "permissions": ["storage", "tabs"],
+    "host_permissions": ["https://*.youtube.com/*"],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_scripts": [
+      {
+        "matches": ["https://*.youtube.com/*"],
+        "js": ["contentScript.js"]
+      }
+    ],
+    "web_accessible_resources": [
+      {
+        "resources": [
+          "assets/start_transcriptor.png",
+          "assets/play.png",
+          "assets/delete.png",
+          "assets/save.png"
+        ],
+        "matches": ["https://*.youtube.com/*"]
+      }
+    ],
+    "action": {
+      "default_icon": {
+        "16": "assets/caption.png",
+        "24": "assets/caption.png",
+        "32":"assets/caption.png"
+      },
+      "default_title": "My YT Bookmarks",
+      "default_popup": "popup.html"
+    },
+    "manifest_version": 3
+}
