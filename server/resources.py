@@ -21,6 +21,9 @@ def dubbing_processe(id):
     #print(converted)
     print(srt)
     return converted
+
+def build_full_dialogue(arr):
+    pass
 def convert_to_hindi(text):
     if len(text) == 1:
         return None;

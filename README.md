@@ -51,7 +51,11 @@ Before going to last step you must have done above steps
 
 Open a youtube and play video. See your server terminal you will have a post request there Content js is sending the request here. After some time your server will be responding json format transcripted diologues. **It some times doesn't work please remove and reupload it. Because It faild if youtube takes time to get loaded.** **Use it on small videos for now. It takes time to translate the script.** **Here are some video links to try on**
 https://www.youtube.com/watch?v=ZyYqyYAKGC0&t=3s 
-https://www.youtube.com/watch?v=ubDx7ST3ZtU .
+https://www.youtube.com/watch?v=ZyYqyYAKGC0&t=9s 
+https://www.youtube.com/watch?v=yj8sAnZ6c3g 
+https://www.youtube.com/watch?v=jx3wcdCtL58&t=9s
+https://www.youtube.com/watch?v=9mXJK86GCsI&t=2s
+.
 
 
 ## Authors
