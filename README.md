@@ -40,6 +40,10 @@ Clone the repository using vcs
   $ cd server
   #Before starting the server please install modules
   $ pip install Flask youtube_transcript_api englisttohindi
+  #For linux or mac users
+  $ python3 resources.py
+  #For windows users
+  $ python resources.py
 ````
 #### Step 4
   Before going to last step you must have done above steps
