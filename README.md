@@ -48,8 +48,9 @@ Clone the repository using vcs
 Step 4
 Before going to last step you must have done above steps
 
-Open a youtube and play video. See your server terminal you will have a post request there Content js is sending the request here. After some time your server will be responding json format transcripted diologues. **It some times doesn't work please remove and reupload it. Because It faild if youtube takes time to get loaded.** **Use it on small 
-videos for now. It takes time to translate the script.**
+Open a youtube and play video. See your server terminal you will have a post request there Content js is sending the request here. After some time your server will be responding json format transcripted diologues. **It some times doesn't work please remove and reupload it. Because It faild if youtube takes time to get loaded.** **Use it on small videos for now. It takes time to translate the script.** **Here are some video links to try on**
+https://www.youtube.com/watch?v=ZyYqyYAKGC0&t=3s 
+https://www.youtube.com/watch?v=ubDx7ST3ZtU .
 
 
 ## Authors
