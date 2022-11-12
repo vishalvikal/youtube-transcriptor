@@ -64,8 +64,6 @@ window.addEventListener("load",
             // [currentVideo]: JSON.stringify([...currentVideoBookmarks, newBookmark].sort((a, b) => a.time - b.time))
         // });
     }
-
-    newVideoLoaded();
 }),false);
 
 const getTime = t => {
