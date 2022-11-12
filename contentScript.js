@@ -14,7 +14,7 @@ window.addEventListener("load",
         //const captionContainer = document.getElementsByClassName("ytp-caption-window-container")[0];
         //console.log(captionContainer);
         
-        fetch('http://localhost:105/api/translate',{
+        fetch('http://localhost:8080/api/translate',{
             method:"POST",
             headers:{
                 Accept:'application/json',
@@ -40,7 +40,7 @@ window.addEventListener("load",
 
             
             
-            timeRecordBtn.src = chrome.runtime.getURL("assets/caption.png");
+            timeRecordBtn.src = chrome.runtime.getURL("assets/start_transcriptor.png");
             timeRecordBtn.className = "ytp-button " + "caption-btn";
             timeRecordBtn.title = "Click to bookmark current timestamp";
             

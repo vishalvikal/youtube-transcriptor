@@ -45,13 +45,10 @@ Clone the repository using vcs
   #For windows users
   $ python resources.py
 ````
-#### Step 4
-  Before going to last step you must have done above steps
+Step 4
+Before going to last step you must have done above steps
 
-  Open a youtube and play video. See your server terminal you will have a post request there
-  Content js is sending the request here. After some time your server will be responding
-  json format transcripted diologues. 
-
+Open a youtube and play video. See your server terminal you will have a post request there Content js is sending the request here. After some time your server will be responding json format transcripted diologues. It some times doesn't work please remove and reupload it. Because It faild if youtube takes time to get loaded.
 
 
 ## Authors
