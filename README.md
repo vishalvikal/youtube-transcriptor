@@ -39,7 +39,7 @@ Clone the repository using vcs
   #start the flask server 
   $ cd server
   #Before starting the server please install modules
-  $ pip install Flask youtube_transcript_api englisttohindi
+  $ pip install Flask youtube_transcript_api englisttohindi googletrans
   #For linux or mac users
   $ python3 resources.py
   #For windows users
