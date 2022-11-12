@@ -18,13 +18,13 @@ def dubbing_processe(id):
         converted_text =convert_to_hindi(i["text"])
         res = {"text":converted_text,"start":i["start"],"duration":i["duration"]};
         converted.append(res);
-    print(converted)
-    # print(srt)
+    #print(converted)
+    print(srt)
     return converted
 def convert_to_hindi(text):
     if len(text) == 1:
         return None;
-    else: return translator.translate(text).text;
+    else: return translator.translate(text, dest="hi").text;
 
 #get the GET or POST request
 @app.route('/api/translate',methods=['GET','POST'])
