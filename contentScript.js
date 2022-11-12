@@ -2,7 +2,6 @@ window.addEventListener("load",
 (() => {
     let youtubeLeftControls, youtubePlayer;
     let currentVideo = "";
-    let currentVideoBookmarks = [];
     chrome.runtime.onMessage.addListener((obj, sender, response) => {
         const { value, videoId } = obj;
             currentVideo = videoId;
@@ -14,7 +13,6 @@ window.addEventListener("load",
         const captionButton = document.getElementsByClassName("caption-btn")[0];
         //const captionContainer = document.getElementsByClassName("ytp-caption-window-container")[0];
         //console.log(captionContainer);
-        //console.log(bookmarkBtnExists);
         
         fetch('http://localhost:105/api/translate',{
             method:"POST",
@@ -28,7 +26,7 @@ window.addEventListener("load",
             .then((data) => console.log(data))
             .catch((err)=>console.log(err));
         if (!captionButton) {
-            const bookmarkBtn = document.createElement("img");
+            const timeRecordBtn = document.createElement("img");
 
             // const captionText = document.createElement("span");
             // const captionVisualLine = document.createElement("span");
@@ -42,25 +40,25 @@ window.addEventListener("load",
 
             
             
-            bookmarkBtn.src = chrome.runtime.getURL("assets/bookmark.png");
-            bookmarkBtn.className = "ytp-button " + "caption-btn";
-            bookmarkBtn.title = "Click to bookmark current timestamp";
+            timeRecordBtn.src = chrome.runtime.getURL("assets/caption.png");
+            timeRecordBtn.className = "ytp-button " + "caption-btn";
+            timeRecordBtn.title = "Click to bookmark current timestamp";
             
             youtubeLeftControls = document.getElementsByClassName("ytp-left-controls")[0];
             youtubePlayer = document.getElementsByClassName("video-stream")[0];
             
-            youtubeLeftControls.append(bookmarkBtn);
-            bookmarkBtn.addEventListener("click", getCurrentTime);
+            youtubeLeftControls.append(timeRecordBtn);
+            timeRecordBtn.addEventListener("click", getCurrentTime);
         }
     }
 
     const getCurrentTime = () => {
         const currentTime = youtubePlayer.currentTime;
-        const newBookmark = {
+        const newRecord = {
             time: currentTime,
             desc: "Current time " + getTime(currentTime),
         };
-        console.log(newBookmark);
+        console.log(newRecord);
 
         // chrome.storage.sync.set({
             // [currentVideo]: JSON.stringify([...currentVideoBookmarks, newBookmark].sort((a, b) => a.time - b.time))
