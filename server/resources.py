@@ -4,6 +4,8 @@ from englisttohindi.englisttohindi import EngtoHindi
 from flask import jsonify;
 from flask import Flask;
 from flask import request;
+from googletrans import Translator;
+translator = Translator();
 #activating the cors
 from flask_cors import CORS;
 app = Flask(__name__)
@@ -16,13 +18,15 @@ def dubbing_processe(id):
         converted_text =convert_to_hindi(i["text"])
         res = {"text":converted_text,"start":i["start"],"duration":i["duration"]};
         converted.append(res);
-    # print(converted)
+    print(converted)
     # print(srt)
     return converted
 def convert_to_hindi(text):
     if len(text) == 1:
         return None;
-    else: return EngtoHindi(text).convert;
+    else: return translator.translate(text).text;
+
+#get the GET or POST request
 @app.route('/api/translate',methods=['GET','POST'])
 
 def hello():
