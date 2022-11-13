@@ -40,19 +40,19 @@ Clone the repository using vcs
  
  - Put this url in the chrome.
  
-     ![Alt Text](/screenshots/extension.png?raw=true "Optional Title")
+     ![ScreenShot](https://github.com/vishalvikal/youtube-transcriptor/blob/main/screenshots/extension.PNG?raw=true "Optional Title")
   - Turn on the developer mode. 
 
-    ![Alt Text](/screenshots/developer_mode_on.png?raw=true "Optional Title")
+    ![ScreenShot](https://github.com/vishalvikal/youtube-transcriptor/blob/main/screenshots/developer_mode_on.PNG?raw=true "Optional Title")
   - Load the extension using load unpacked option.
 
-    ![Alt Text](/screenshots/use_load.png?raw=true "Optional Title")
+    ![ScreenShot](https://github.com/vishalvikal/youtube-transcriptor/blob/main/screenshots/use_load.PNG?raw=true "Optional Title")
   - Select the extension. Use the chrome_extension directory for loading
   
-    ![Alt Text](/screenshots/select_extension.png?raw=true "Optional Title")
+    ![ScreenShot](https://github.com/vishalvikal/youtube-transcriptor/blob/main/screenshots/select_extension.PNG?raw=true "Optional Title")
   - You will get in the extensions list.
       
-      ![Alt Text](/screenshots/extension_success.png?raw=true "Optional Title")
+    ![ScreenShot](https://github.com/vishalvikal/youtube-transcriptor/blob/main/screenshots/extension_success.PNG?raw=true "Optional Title")
 
 #### Step 3
  Navigate to the source directory and start the server. 
