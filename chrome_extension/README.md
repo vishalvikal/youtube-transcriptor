@@ -35,8 +35,25 @@ Clone the repository using vcs
 ```
 #### Step 2
  Enable the developer option in chrome.  
- Take the help of this link https://support.google.com/chrome_webstore/answer/2664769?hl=en
+ Take the help of this link https://support.google.com/chrome_webstore/answer/2664769?hl=en 
+
  
+ - Put this url in the chrome.
+ 
+     ![Alt Text](./screenshots/extension.png?raw=true "Optional Title")
+  - Turn on the developer mode. 
+
+    ![Alt Text](./screenshots/developer_mode_on.png?raw=true "Optional Title")
+  - Load the extension using load unpacked option.
+
+    ![Alt Text](./screenshots/use_load.png?raw=true "Optional Title")
+  - Select the extension. Use the chrome_extension directory for loading
+  
+    ![Alt Text](./screenshots/select_extension.png?raw=true "Optional Title")
+  - You will get in the extensions list.
+      
+      ![Alt Text](./screenshots/extension_success.png?raw=true "Optional Title")
+
 #### Step 3
  Navigate to the source directory and start the server. 
 ```
@@ -50,6 +67,10 @@ Clone the repository using vcs
   #For windows users
   $ python resources.py
 ````
+#### Step 5
+
+Load chrome extension. The extension in the chrome_extension directory. For loading the custom extension Please make sure you have completed step 2. 
+
 #### Step 4
 
 Before going to last step you must have done above steps
